@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.dau {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.onhap {
+  width: 500px;
+  height: 70px;
+  padding: 10px;
+}
+#otk {
+  border: 1px solid black;
+  width: 480px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.nuttk {
+  text-align: center;
+  padding: 10px;
+  height: 70px;
+  width: 12 0px;
+}
+
+#ntk {
+  padding: 0px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 900px;
+  width: 80px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: rgb(172, 250, 177);
+}
+#ntk:hover {
+  font-size: 17px;
+  border: 2px solid black;
+  background-color: rgb(133, 231, 140);
+  transition: all 0.3s;
+}
+#ntk1 {
+  padding: 0px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 900px;
+  width: 80px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: rgb(172, 250, 177);
+}
+#ntk1:hover {
+  font-size: 16px;
+  border: 2px solid black;
+  background-color: rgb(133, 231, 140);
+  transition: all 0.3s;
+}
+.nut {
+  margin-bottom: 10px;
+  margin-left: 65px;
+  width: 130px;
+  height: 35px;
+}
+.nut a {
+  color: black;
+  background-color: rgb(172, 250, 177);
+  border-radius: 8px;
+  line-height: 35px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100px;
+  height: 35px;
+}
+.nut a:hover {
+  font-size: 17px;
+  background-color: rgb(133, 231, 140);
+}
+.dsht {
+  margin: 0px auto;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 90%;
+  overflow-y: auto;
+}
+.tableht tbody tr:nth-child(even) {
+  background-color: rgb(234, 240, 246);
+}
+
+.tableht {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableht th {
+  background-color: rgb(172, 250, 177);
+  padding: 15px;
+  border: 1px solid black;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.tableht th::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border: 1px solid black;
+  bottom: 0;
+  left: 0;
+}
+
+.tableht td {
+  height: 60px;
+  max-width: 200px;
+  overflow: auto;
+  white-space: wrap;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: left;
+}
+h5 {
+  text-align: center;
+}
+.stt {
+  max-width: 50px;
+}
+.dc {
+  max-width: 100px;
+}
+.hd {
+  width: 150px;
+}
+.hdong {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+}
+.chucnang {
+  border: 2px solid rgb(73, 219, 24);
+  color: black;
+  display: inline-block;
+  width: 50px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: white;
+}
+.chucnang1 {
+  border: 2px solid rgb(73, 219, 24);
+  color: black;
+  display: inline-block;
+  width: 50px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: white;
+}
+
+.chucnang:hover {
+  text-decoration: none;
+  border: 2px solid rgb(210, 11, 4);
+  width: 50px;
+  height: 29px;
+  transition: all 0.4s;
+}
+
+.chucnang1:hover {
+  text-decoration: none;
+  border: 2px solid rgb(210, 11, 4);
+  width: 50px;
+  height: 29px;
+  transition: all 0.4s;
+}

@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.qltao {
+  border: 1px solid black;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to right, rgb(226, 227, 228), rgb(232, 236, 239));
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nd {
+  padding: 35px;
+  border-radius: 8px;
+  background: linear-gradient(to right, rgb(255, 254, 254), rgb(255, 243, 240));
+  width: 100%;
+  box-sizing: border-box;
+  height: 1150px;
+}

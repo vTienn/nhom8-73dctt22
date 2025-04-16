@@ -1,0 +1,65 @@
+#chart1 {
+    width: 40% !important;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    border: 1px solid #ccc; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#chart2 {
+    width: 40% !important;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    border: 1px solid #ccc; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Container bao ngoài */
+.bao {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các thẻ con theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các thẻ includem */
+    padding: 10px;
+    background-color: #f0f0f0; /* Nền nhẹ cho container */
+}
+
+/* Thẻ includem - chứa các biểu đồ */
+.includem {
+    display: flex; /* Sắp xếp các thẻ con bên trong theo chiều ngang */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các thẻ con */
+    align-items: flex-start; /* Căn trên cùng */
+    gap: 10px; /* Khoảng cách giữa các chart-box */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Thẻ includem2 */
+.includem2 {
+    height: 300px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Chart-box */
+.chart-box {
+    flex: 1; /* Chia đều không gian giữa các chart-box */
+    min-width: 300px; /* Đặt chiều rộng tối thiểu */
+    margin: 5px;
+    padding: 10px;
+    color: rgb(0, 0, 0); /* Màu chữ */
+    text-align: center;
+}
+
+/* Màu nền riêng cho từng chart-box */
+.red-box {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); }
+
+.green-box {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); }
+
+

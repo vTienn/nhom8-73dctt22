@@ -1,0 +1,75 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .admin-layout {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #ffffff;
+    color: rgb(24, 22, 22);
+    width: 250px;
+    height: 100%;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .sidebar.collapsed {
+    width: 70px;
+  }
+  
+  .sidebar .toggle-btn {
+    background-color: #34495e;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .sidebar .sidebar-menu {
+    list-style: none;
+    height: 100%;
+    padding: 20px 10px;
+    flex-grow: 1;
+  }
+  
+  .sidebar .sidebar-menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar .sidebar-menu li:hover {
+    background-color: #1abc9c;
+  }
+  
+  .sidebar .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  
+  .sidebar.collapsed .menu-text {
+    display: none;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+  }
+  

@@ -1,0 +1,115 @@
+/* Định dạng cơ bản cho modal */
+
+.modalx {
+  display: none;
+  /* Ẩn modal mặc định */
+  position: fixed;
+  /* Cố định vị trí modal */
+  z-index: 1000;
+  /* Đảm bảo modal nằm trên cùng */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Chiếm toàn bộ chiều rộng */
+  height: 100%;
+  /* Chiếm toàn bộ chiều cao */
+  background-color: rgba(187, 201, 242, 0.8);
+  /* Nền mờ với màu BBC9F2 */
+}
+
+/* Hộp thoại bên trong modal */
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  top: 100px;
+  /* Căn cách phần trên */
+  width: 50%;
+  /* Chiều rộng modal */
+  background-color: #bbc9f2;
+  /* Nền với màu BBC9F2 */
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Đổ bóng */
+}
+
+/* Tiêu đề modal */
+
+.modal-header {
+  padding: 10px 20px;
+  background-color: #9fa9e1;
+  /* Màu nền tiêu đề */
+  color: white;
+  /* Màu chữ trắng */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nút đóng */
+
+.modal-header .close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  /* Màu chữ trắng */
+  cursor: pointer;
+}
+
+/* Nội dung modal */
+
+.modal-body {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  /* Màu chữ đậm hơn để tương phản */
+}
+
+/* Form inline */
+
+.form-inline {
+  display: flex;
+  align-items: center;
+  /* Căn chỉnh các phần tử dọc theo trục ngang */
+  flex-wrap: wrap;
+  /* Đảm bảo không tràn xuống dòng */
+  gap: 10px;
+  /* Khoảng cách giữa các phần tử */
+  margin-top: 10px;
+}
+
+.form-inline input {
+  margin-right: 10px;
+  margin-left: -10px;
+  background: #f0f4ff;
+  /* Nền sáng hơn */
+  color: #333;
+  /* Chữ đậm hơn */
+  border: 1px solid #9fa9e1;
+}
+
+.form-inline label {
+  margin-right: -30px;
+  margin-left: 10px;
+  color: #333;
+  /* Màu chữ đậm hơn */
+}
+
+button {
+  margin: 0 5px;
+  /* Khoảng cách giữa các nút */
+  background: #9fa9e1;
+  /* Nền nút */
+  color: white;
+  /* Màu chữ trắng */
+  border: 1px solid #818cc8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #818cc8;
+  /* Đổi màu khi hover */
+}

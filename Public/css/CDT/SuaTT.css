@@ -1,0 +1,91 @@
+.khoi {
+  width: 75%;
+  height: 500px;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgb(192, 186, 186), rgb(235, 170, 154));
+  background: whitesmoke;
+
+  border-radius: 8px;
+  border: 15px solid rgb(240, 233, 233);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.khoi1 {
+  line-height: 30px;
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
+.khoi1 label {
+  font-weight: 600;
+  width: 20%;
+  margin-right: 10px;
+}
+.khoi1 input {
+  font-size: 16px;
+  padding-left: 20px;
+  width: 70%;
+  height: 37px;
+  border-radius: 8px;
+}
+.khoi1 select {
+  font-size: 16px;
+  border-radius: 8px;
+  width: 25%;
+  height: 37px;
+  text-align: center;
+}
+#ns {
+  width: 25%;
+  text-align: center;
+}
+.nut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+}
+.nut button {
+  border: 1px solid black;
+
+  font-size: 16px;
+  color: black;
+  border-radius: 13px;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(50, 181, 247);
+}
+.nut a {
+  border: 1px solid black;
+  padding-top: 12px;
+  border-radius: 13px;
+  display: block;
+  width: 80px;
+  height: 40px;
+  line-height: 19px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(50, 181, 247);
+}
+.nut button:hover {
+  color: black;
+
+  transition: all 0.5s;
+  width: 81px;
+  height: 41px;
+  font-size: 17px;
+  border: 1px solid black;
+}
+.nut a:hover {
+  transition: all 0.5s;
+  width: 81px;
+  height: 41px;
+  color: black;
+  font-size: 17px;
+  border: 1px solid black;
+}
