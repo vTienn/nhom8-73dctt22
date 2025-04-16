@@ -1,7 +1,4 @@
 nhom 8 73dctt22
-<<<<<<< HEAD
 oklaaa
-=======
 
 check conflic nha ae _tadat
->>>>>>> be047a38ef3789d9aec8b170057660ad1dbcb73e
