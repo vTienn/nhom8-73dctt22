@@ -1,4 +1,9 @@
+nhom 8 73dctt22z
 nhom 8 73dctt22
+<<<<<<< HEAD
 oklaaa
+=======
+debug.log("Conflic code!")
+>>>>>>> 57298a96a52f1585a535742816057d0a5ef2748f
 
 check conflic nha ae _tadat
