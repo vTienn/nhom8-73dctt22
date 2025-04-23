@@ -25,7 +25,7 @@ class Home extends controller {
             if ($username == "" || $password == "") {
                 echo "<script>
                         alert('Vui lòng nhập đầy đủ thông tin');
-                        window.location.href = '/congnghephanmem/Login';
+                        window.location.href = '/Login';
                       </script>";
                 exit; 
             } else {
@@ -40,19 +40,19 @@ class Home extends controller {
     
                    
                     if ($loaiTaiKhoan == "Department") {
-                        header('Location: /congnghephanmem/Bangtotnghiep/hienthi');
+                        header('Location: /Bangtotnghiep/hienthi');
                         exit;
                     } elseif ($loaiTaiKhoan == "User") {
-                        header('Location: /congnghephanmem/Profile');
+                        header('Location: /Profile');
                         exit;
                     } else {
-                        header('Location: /congnghephanmem/Danhsachtk');
+                        header('Location: /Danhsachtk');
                         exit;
                     }
                 } else {
                     echo "<script>
                             alert('Tên tài khoản hoặc mật khẩu không đúng');
-                            window.location.href = '/congnghephanmem/Login';
+                            window.location.href = '/Login';
                           </script>";
                     exit; 
                 }
