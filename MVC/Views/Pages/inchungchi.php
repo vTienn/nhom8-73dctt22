@@ -102,7 +102,7 @@
 <body>
     <div class="certificate-container">
   
-        <img src="http://localhost/congnghephanmem/Public/picture/utt.png" alt="Logo Trường" class="logo">
+        <img src="http://totnghieputt/Public/picture/utt.png" alt="Logo Trường" class="logo">
 
         <div class="header">
             <h1>Trường Công Nghệ Giao Thông Vận Tải</h1>

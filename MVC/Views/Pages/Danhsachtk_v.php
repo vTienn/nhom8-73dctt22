@@ -11,7 +11,7 @@
 
       <div>
       
-      <form action="http://localhost/congnghephanmem/Danhsachtk/timkiem" method="post">
+      <form action="http://totnghieputt/Danhsachtk/timkiem" method="post">
         <div class="form-inline">
         <label style="width:150px; margin-left: 0px;">Tên Tài Khoản</label>
         <input style="width:240px;" type="text" class="form-control" name="txtTentk" value="<?php if(isset($data['Loaitaikhoan'])) echo $data['Loaitaikhoan'] ?>">
@@ -30,7 +30,7 @@
     </div>
 </header>
 <hr>
-<form method="post" action="http://localhost/congnghephanmem/Danhsachtk/timkiem" style= "max-width: 70rem; margin-inline: auto;">
+<form method="post" action="http://totnghieputt/Danhsachtk/timkiem" style= "max-width: 70rem; margin-inline: auto;">
    <div table-responsive>
    <table class="table table-striped">
         <thead>
@@ -58,9 +58,9 @@
                             <td><?php echo $row['Loaitaikhoan'] ?></td>
                             <td>
                                 <a class="btn btn-outline-primary" 
-                                href="http://localhost/congnghephanmem/Danhsachtk/sua/<?php echo $row['Tentaikhoan'] ?>">Sửa</a>
+                                href="http://totnghieputt/Danhsachtk/sua/<?php echo $row['Tentaikhoan'] ?>">Sửa</a>
                                 <a class="btn btn-outline-danger" 
-                                    href="http://localhost/congnghephanmem/Danhsachtk/xoa/<?php echo $row['Tentaikhoan'] ?>"
+                                    href="http://totnghieputt/Danhsachtk/xoa/<?php echo $row['Tentaikhoan'] ?>"
                                     onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
                             </td>
                         </tr>
@@ -85,7 +85,7 @@
         </div>
        
         <div class="modal-body">
-          <form action="http://localhost/congnghephanmem/Danhsachtk/themmoi" method="POST">
+          <form action="http://totnghieputt/Danhsachtk/themmoi" method="POST">
             <table width="100%">
               <tr>
                 <td>Tên Tài Khoản:</td>

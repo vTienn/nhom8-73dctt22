@@ -19,7 +19,7 @@ class PB extends controller{
     
         // Kiểm tra nếu không có dữ liệu nào được nhập hoặc chọn
         if ($ten_khoa == '' && $filter == '') {
-            echo '<script>window.location.href = "http://localhost/congnghephanmem/PB";
+            echo '<script>window.location.href = "http://totnghieputt/PB";
             </script>';
         } else {
             // Xử lý lọc dữ liệu
@@ -50,7 +50,7 @@ class PB extends controller{
             //Kiểm tra thiếu dữ liệu      
             if($makhoa =='' ||$tenkhoa =='' ||$email =='' ){
                 echo '<script>alert("Thiếu dữ liệu!");
-                    window.location.href = "http://localhost/congnghephanmem/PB";</script>';
+                    window.location.href = "http://totnghieputt/PB";</script>';
             }
             else{
                 //Kiểm tra trùng mã loại
@@ -58,17 +58,17 @@ class PB extends controller{
                 // $kq2=$this->dspb->add_tk($makhoa);
                 if($kq1){
                     echo '<script>alert("Trùng mã khoa");
-                    window.location.href = "http://localhost/congnghephanmem/PB";</script>';
+                    window.location.href = "http://totnghieputt/PB";</script>';
                 }
                 else{
                     $kq=$this->dspb->pb_add($makhoa, $tenkhoa, $email);
                     $kq2 = $this->dspb->add_tk($makhoa);
                     if($kq && $kq2)
                         echo '<script>alert("Thêm mới thành công!");
-                    window.location.href = "http://localhost/congnghephanmem/PB";</script>';
+                    window.location.href = "http://totnghieputt/PB";</script>';
                     else
                         echo '<script>alert("Thêm mới thất bại!");
-                    window.location.href = "http://localhost/congnghephanmem/PB";</script>';
+                    window.location.href = "http://totnghieputt/PB";</script>';
 
                 }
                     
@@ -101,7 +101,7 @@ class PB extends controller{
             // bắt lỗi để trống dl
             if($makhoa =='' ||$tenkhoa ==''  ||$email =='' ){
                     echo '<script>alert("Thiếu dữ liệu!");
-                    window.location.href = "http://localhost/congnghephanmem/PB";</script>';
+                    window.location.href = "http://totnghieputt/PB";</script>';
             
             }
             else{
@@ -139,7 +139,7 @@ class PB extends controller{
             'dulieu'=>$this->dspb->pb_find('','')
         ]);
         echo '<script>
-                    window.location.href = "http://localhost/congnghephanmem/PB";</script>';
+                    window.location.href = "http://totnghieputt/PB";</script>';
 
 
 

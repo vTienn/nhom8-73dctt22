@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/CDT/deptt123.css">
+    <link rel="stylesheet" href="http://totnghieputt/Public/css/CDT/deptt123.css">
 
 </head>
 <body>
 <div class="qltao">          
             
                       
-                <form method="post" action="http://localhost/congnghephanmem/Tracuu/timkiem">
+                <form method="post" action="http://totnghieputt/Tracuu/timkiem">
           <div class="nd">     
               <div class="dau">
 

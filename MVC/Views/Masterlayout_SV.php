@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/phuchangepass.css">
+<link rel="stylesheet" href="http://totnghieputt/Public/css/phuchangepass.css">
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -21,15 +21,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="http://localhost/congnghephanmem/Public/picture/utt.png" style="width:45%;" class="w3-round"><br><br>
+    <img src="http://totnghieputt/Public/picture/utt.png" style="width:45%;" class="w3-round"><br><br>
     <h4><b>Quản lý</b></h4>
   </div>
   <div class="w3-bar-block">
-    <a href="http://localhost/congnghephanmem/Profile" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Thông tin cá nhân</a> 
-    <a href="http://localhost/congnghephanmem/Tracuu" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Tra cứu </a>
-    <a href="http://localhost/congnghephanmem/yeucau_chungchi" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Nộp chứng chỉ</a> 
+    <a href="http://totnghieputt/Profile" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Thông tin cá nhân</a> 
+    <a href="http://totnghieputt/Tracuu" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Tra cứu </a>
+    <a href="http://totnghieputt/yeucau_chungchi" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Nộp chứng chỉ</a> 
     <a href=""  onclick="showModal(event)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"> <i class="icon fa fa-th-large fa-fw w3-margin-right"></i> Đổi Mật Khẩu</a>
-    <a href="http://localhost/congnghephanmem/Login" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Đăng Xuất</a>
+    <a href="http://totnghieputt/Login" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Đăng Xuất</a>
 
   </div>
   
@@ -82,7 +82,7 @@ function w3_close() {
 <div id="passwordModal" class="modal_changePass" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px; z-index: 1000;">
 <button class="close-btn" onclick="closeModal()">×</button>  
 <div class="change-password-container">
-<form action="http://localhost/congnghephanmem/Profile/changepass" method="POST">
+<form action="http://totnghieputt/Profile/changepass" method="POST">
     <?php if (session_status() === PHP_SESSION_NONE) {
         session_start();
         }

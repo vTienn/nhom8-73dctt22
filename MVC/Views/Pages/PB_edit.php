@@ -14,7 +14,7 @@
       <br>
     <h1><b>QUẢN LÝ SINH VIÊN</b></h1>
     
-    <form action="http://localhost/congnghephanmem/PB/fillter/" method="post">
+    <form action="http://totnghieputt/PB/fillter/" method="post">
     <div class="w3-section w3-bottombar w3-padding-16" style="display: flex; align-items: center; gap: 5px;">
       <span class="w3-margin-right">Lọc:</span> 
       <button class="w3-button w3-black" name="filter" value="ALL">ALL</button>
@@ -30,7 +30,7 @@
        value="<?php if(isset($data['ten_khoa'])) echo $data['ten_khoa'] ?>">    
 
 
-       <button  type="submit" class="w3-button w3-blue" href="http://localhost/congnghephanmem/PB">Quay lại</button>
+       <button  type="submit" class="w3-button w3-blue" href="http://totnghieputt/PB">Quay lại</button>
        
        
        
@@ -56,7 +56,7 @@
       </tr>
     </thead>
     <tbody>
-    <form action="http://localhost/congnghephanmem/PB/edit/" method="POST">
+    <form action="http://totnghieputt/PB/edit/" method="POST">
     <?php 
       if(isset($data['dulieu']) && mysqli_num_rows($data['dulieu']) > 0)
       while($row = mysqli_fetch_assoc($data['dulieu']))

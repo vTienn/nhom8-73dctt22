@@ -82,7 +82,7 @@
     <div class="container">
         <h2>Nhập thông tin chứng chỉ</h2>
     
-        <form method="post" action="http://localhost/congnghephanmem/yeucau_chungchi/themmoi" id="searchForm">
+        <form method="post" action="http://totnghieputt/yeucau_chungchi/themmoi" id="searchForm">
        
             <div class="form-group">
                 <label for="txtmacc">Mã chứng chỉ</label>
@@ -125,7 +125,7 @@
         document.getElementById('btnTimKiem').addEventListener('click', function() {
             var masv = document.getElementById("txtmasv").value;
             var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "http://localhost/congnghephanmem/search.php?masv=" + masv, true);
+            xhttp.open("GET", "http://totnghieputt/search.php?masv=" + masv, true);
             xhttp.onreadystatechange = function() {
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
                     document.getElementById("txttensv").value = xhttp.responseText; 

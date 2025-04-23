@@ -5,7 +5,7 @@
       <br>
     <h1><b>QUẢN LÝ SINH VIÊN</b></h1>
     
-    <form action="http://localhost/congnghephanmem/PB/fillter/" method="post">
+    <form action="http://totnghieputt/PB/fillter/" method="post">
     <div class="w3-section w3-bottombar w3-padding-16" style="display: flex; align-items: center; gap: 5px;">
       <span class="w3-margin-right">Lọc:</span> 
       <button class="w3-button w3-black" name="filter" value="ALL">ALL</button>
@@ -51,13 +51,13 @@
       {
     ?>
  
- <tr onclick="window.location.href='http://localhost/congnghephanmem/PB/sua/<?php echo $row['MaKhoa'];?>';">
+ <tr onclick="window.location.href='http://totnghieputt/PB/sua/<?php echo $row['MaKhoa'];?>';">
     <td id="wrap"><?php echo $row['MaKhoa'];?></td>
     <td id="wrap"><?php echo $row['TenKhoa'];?></td>
     <td id="wrap"><?php echo $row['Email'];?></td>
     <td id="wrap">
         <a onclick="return confirm('Bạn có muốn xóa thông tin này không');" 
-           href="http://localhost/congnghephanmem/PB/del/<?php echo $row['MaKhoa'];?>"  
+           href="http://totnghieputt/PB/del/<?php echo $row['MaKhoa'];?>"  
            class="w3-button w3-red">Xóa</a>
     </td>
 </tr>
@@ -87,7 +87,7 @@
       <div class="modal-body">
       <div class="container">
         <h1><h1>
-        <form action="http://localhost/congnghephanmem/PB/add/" method="POST">
+        <form action="http://totnghieputt/PB/add/" method="POST">
         
         <div class="form-group">
             <label><h4>Mã khoa</h4></label>

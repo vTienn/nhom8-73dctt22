@@ -57,7 +57,7 @@
 
 <div class="container">
     <h2>Quản lý chứng chỉ</h2>
-    <form method="post" action="http://localhost/congnghephanmem/dschungchi/Get_data">
+    <form method="post" action="http://totnghieputt/dschungchi/Get_data">
         <table class="table table-striped">
             <thead>
                 <tr>

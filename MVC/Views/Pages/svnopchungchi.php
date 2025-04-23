@@ -82,7 +82,7 @@
     <div class="container">
         <h2>Nhập thông tin chứng chỉ</h2>
     
-        <form method="post" action="http://localhost/congnghephanmem/yeucau_chungchi/themmoi" id="searchForm">
+        <form method="post" action="http://totnghieputt/yeucau_chungchi/themmoi" id="searchForm">
        
             <div class="form-group">
                 <label for="txtmacc">Mã chứng chỉ</label>

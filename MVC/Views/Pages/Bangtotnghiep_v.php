@@ -16,7 +16,7 @@
     </div>
   </header>
 
-<form method="post" action="http://localhost/congnghephanmem/Bangtotnghiep/timkiem">
+<form method="post" action="http://totnghieputt/Bangtotnghiep/timkiem">
     <div class="form-inline">
       <label style="width:150px;">Mã bằng tốt nghiệp</label>
       <input style="width:240px;" type="text" class="form-control" name="txtMabang" 
@@ -63,7 +63,7 @@
                               <td><?php echo $row['XepHang'] ?></td>
                               <td><?php echo $row['NgayCapBang'] ?></td>
                               <td>
-                                    <form method="post" action="http://localhost/congnghephanmem/Bangtotnghiep/capNhatTrangThaiBangTotNghiep">
+                                    <form method="post" action="http://totnghieputt/Bangtotnghiep/capNhatTrangThaiBangTotNghiep">
                                         <input type="hidden" name="MaBang" value="<?php echo $row['MaBang']; ?>">
                                         <?php if ($row['TrangThai'] == 'Chưa nhận') { ?>
                                             <button type="submit" class="w3-button w3-red">Chưa nhận</button>
@@ -74,13 +74,13 @@
                                 </td>
                               <td>
                               <a class="btn btn-outline-primary" 
-                                  href="http://localhost/congnghephanmem/Bangtotnghiep/sua/<?php echo $row['MaBang'] ?>"
+                                  href="http://totnghieputt/Bangtotnghiep/sua/<?php echo $row['MaBang'] ?>"
                                   >Sửa</a>
                                   <a class="btn btn-outline-danger" 
-                                  href="http://localhost/congnghephanmem/Bangtotnghiep/xoa/<?php echo $row['MaBang'] ?>"
+                                  href="http://totnghieputt/Bangtotnghiep/xoa/<?php echo $row['MaBang'] ?>"
                                       onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</a>
                                   <a class="btn btn-success" 
-                                  href="http://localhost/congnghephanmem/Bangtotnghiep/inBTN/<?php echo $row['MaBang']; ?>"
+                                  href="http://totnghieputt/Bangtotnghiep/inBTN/<?php echo $row['MaBang']; ?>"
                                   >In</a>
                               </td>
                           </tr>
@@ -103,7 +103,7 @@
         </div>
         <!-- Modal body -->
         <div class="modal-body">
-          <form action="http://localhost/congnghephanmem/Bangtotnghiep/themmoi" method="POST">
+          <form action="http://totnghieputt/Bangtotnghiep/themmoi" method="POST">
             <table width="100%">
               <tr>
                 <td>Mã bằng tốt nghiệp:</td>

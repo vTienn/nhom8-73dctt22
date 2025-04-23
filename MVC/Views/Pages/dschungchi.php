@@ -57,7 +57,7 @@
     </style>
 </head>
 <body>
-  <form method="post" action="http://localhost/congnghephanmem/dschungchidaduyet/timkiem">
+  <form method="post" action="http://totnghieputt/dschungchidaduyet/timkiem">
 <div class="container">
     <h2>Danh sách chứng chỉ</h2>
 
@@ -103,13 +103,13 @@
                     <td><?php echo $row['NgayCapChungChi'] ?></td>
                         
                     <td>
-              <a href="http://localhost/congnghephanmem/dschungchidaduyet/suacc_v/<?php echo $row['MaChungChi'] ?>" class="btn btn-outline-danger">Sửa</a>
-              <a href="http://localhost/congnghephanmem/dschungchidaduyet/xoa/<?php echo $row['MaChungChi'] ?>" class="btn btn-outline-primary">Xóa</a>
+              <a href="http://totnghieputt/dschungchidaduyet/suacc_v/<?php echo $row['MaChungChi'] ?>" class="btn btn-outline-danger">Sửa</a>
+              <a href="http://totnghieputt/dschungchidaduyet/xoa/<?php echo $row['MaChungChi'] ?>" class="btn btn-outline-primary">Xóa</a>
              
             </td>
             <td>
             <?php if ($row['LoaiChungChi'] != 'Khác') { ?>
-            <a href="http://localhost/congnghephanmem/dschungchidaduyet/inchungchi/<?php echo $row['MaChungChi']; ?>" class="btn btn-outline-primary">In</a>
+            <a href="http://totnghieputt/dschungchidaduyet/inchungchi/<?php echo $row['MaChungChi']; ?>" class="btn btn-outline-primary">In</a>
         <?php } ?>
             </td>
                   

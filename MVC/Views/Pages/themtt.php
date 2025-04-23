@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/CDT/SuaTT.css">
+    <link rel="stylesheet" href="http://totnghieputt/Public/css/CDT/SuaTT.css">
 
 </head>  
    <body>  
 
-    <form method="post" action="http://localhost/congnghephanmem/Thongtin/them">
+    <form method="post" action="http://totnghieputt/Thongtin/them">
          <div class="khoi">
 
             <div class="khoi1">
@@ -50,7 +50,7 @@
             </div>
           <div class="nut">
             <button type="submit" class="btn btn-primary" name="btnThem">Thêm</button>
-            <a href="http://localhost/congnghephanmem/Thongtin">Hủy</a>
+            <a href="http://totnghieputt/Thongtin">Hủy</a>
           </div> 
                </div>
 

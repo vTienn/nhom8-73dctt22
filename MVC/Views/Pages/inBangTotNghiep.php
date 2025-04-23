@@ -74,7 +74,7 @@
       <br />
       <h2>BẰNG TỐT NGHIỆP</h2>
 
-      <img src="http://localhost/congnghephanmem/Public/picture/utt.png" alt="Logo" />
+      <img src="http://totnghieputt/Public/picture/utt.png" alt="Logo" />
 
       <?php if (isset($data['dulieu']) && !empty($data['dulieu'])): ?>
             <?php foreach ($data['dulieu'] as $item): ?>

@@ -93,7 +93,7 @@
                       $kq=$this->goi->sua($m,$t,$ns,$ml,$mk,$eml);
                 if($kq){
                     echo '<script>alert("Sửa thành công!");
-                    window.location.href = "http://localhost/congnghephanmem/Thongtin";</script>';
+                    window.location.href = "http://totnghieputt/Thongtin";</script>';
                 }
                 else{
                     echo '<script>alert("Sửa thất bại!")</script>';
@@ -127,12 +127,12 @@
                 if ($xacnhan == '' || $matkhaucu == '' || $matkhaumoi == '') {
                       echo '<script>
                             alert("Thiếu Dữ Liệu");
-                            window.location.href = "http://localhost/congnghephanmem/Thongtin/hienthi/hienthi";
+                            window.location.href = "http://totnghieputt/Thongtin/hienthi/hienthi";
                           </script>';
                     exit;
                 }
     
-                if ( $xacnhan != $matkhaumoi){ echo '<script> alert("Nhập lại mật khẩu còn sai nữa???"); window.location.href = "http://localhost/congnghephanmem/Thongtin/hienthi"; </script>';
+                if ( $xacnhan != $matkhaumoi){ echo '<script> alert("Nhập lại mật khẩu còn sai nữa???"); window.location.href = "http://totnghieputt/Thongtin/hienthi"; </script>';
                     exit;
                 }
     
@@ -143,13 +143,13 @@
                     $doii = $this->goi->changepass($tentaikhoan, $matkhaumoi);
                     echo '<script>
                             alert("Sửa thành công!");
-                            window.location.href = "http://localhost/congnghephanmem/Thongtin/hienthi";
+                            window.location.href = "http://totnghieputt/Thongtin/hienthi";
                           </script>';
                     exit;
                 } else {
                     echo '<script>
                             alert("Sửa thất bại!");
-                            window.location.href = "http://localhost/congnghephanmem/Thongtin/hienthi";
+                            window.location.href = "http://totnghieputt/Thongtin/hienthi";
                           </script>';
                     exit;
                 }

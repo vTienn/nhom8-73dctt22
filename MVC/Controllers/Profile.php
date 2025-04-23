@@ -34,12 +34,12 @@
                 if ($xacnhan == '' || $matkhaucu == '' || $matkhaumoi == '') {
                       echo '<script>
                             alert("Thiếu Dữ Liệu");
-                            window.location.href = "http://localhost/congnghephanmem/Profile";
+                            window.location.href = "http://totnghieputt/Profile";
                           </script>';
                     exit;
                 }
     
-                if ( $xacnhan != $matkhaumoi){ echo '<script> alert("Nhập lại mật khẩu còn sai nữa???"); window.location.href = "http://localhost/congnghephanmem/Profile"; </script>';
+                if ( $xacnhan != $matkhaumoi){ echo '<script> alert("Nhập lại mật khẩu còn sai nữa???"); window.location.href = "http://totnghieputt/Profile"; </script>';
                     exit;
                 }
     
@@ -50,13 +50,13 @@
                     $doii = $this->goi->changepass($tentaikhoan, $matkhaumoi);
                     echo '<script>
                             alert("Sửa thành công!");
-                            window.location.href = "http://localhost/congnghephanmem/Profile";
+                            window.location.href = "http://totnghieputt/Profile";
                           </script>';
                     exit;
                 } else {
                     echo '<script>
                             alert("Sửa thất bại!");
-                            window.location.href = "http://localhost/congnghephanmem/Profile";
+                            window.location.href = "http://totnghieputt/Profile";
                           </script>';
                     exit;
                 }

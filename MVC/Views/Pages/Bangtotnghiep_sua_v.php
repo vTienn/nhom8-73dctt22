@@ -47,8 +47,8 @@
     </style>
 </head>
 <body>
-    <div class="form-container" style="background-image: url('http://localhost/congnghephanmem/Public/picture/nen.jpg'); background-size: cover; padding: 20px; border-radius: 10px; height: 1200px;">
-        <form method="post" action="http://localhost/congnghephanmem/Bangtotnghiep/suadl" >
+    <div class="form-container" style="background-image: url('http://totnghieputt/Public/picture/nen.jpg'); background-size: cover; padding: 20px; border-radius: 10px; height: 1200px;">
+        <form method="post" action="http://totnghieputt/Bangtotnghiep/suadl" >
             <div class="form-group">
                 <?php 
                 if(isset($data['dulieu']) && mysqli_num_rows($data['dulieu']) > 0){

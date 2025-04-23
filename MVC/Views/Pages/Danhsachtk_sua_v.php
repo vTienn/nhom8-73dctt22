@@ -1,6 +1,6 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/phu_sua.css">
+<link rel="stylesheet" href="http://totnghieputt/Public/css/phu_sua.css">
 
 </head>
 <body>
@@ -16,7 +16,7 @@
       <button type="button" class="w3-button w3-white" onclick="openModal()" data-toggle="modalx" data-target="#myModal" ><i class="fa fa-diamond w3-margin-right"></i>Thêm Mới</button>
 
       <div>
-      <form action="http://localhost/congnghephanmem/Danhsachtk/timkiem" method="post">
+      <form action="http://totnghieputt/Danhsachtk/timkiem" method="post">
         <div class="form-inline">
         <label style="width:150px; margin-left: 0px;">Tên Tài Khoản</label>
         <input style="width:240px;" type="text" class="form-control" name="txtTentk" value="<?php if(isset($data['Loaitaikhoan'])) echo $data['Loaitaikhoan'] ?>">
@@ -36,7 +36,7 @@
 </header>
 
 <div class="form-container">
-        <form method="post" action="http://localhost/congnghephanmem/Danhsachtk/suadl">
+        <form method="post" action="http://totnghieputt/Danhsachtk/suadl">
             <div class="form-group">
                 <?php 
                 if (isset($data['dulieu']) && mysqli_num_rows($data['dulieu']) > 0) {

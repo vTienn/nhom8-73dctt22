@@ -42,7 +42,7 @@
                 $tensv=$_POST['txtTensv'];
                 if($mabang == '' && $tensv == ''){
                     echo '<script>alert("Vui lòng nhập dữ liệu");
-                        window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                        window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                 }
                 else{
                     $dl=$this->degree->bangtotnghiep_find($mabang,$tensv);
@@ -81,20 +81,20 @@
             
             if($mabang =='' ||$tensv =='' ||$masv =='' ||$makhoa =='' ||$loaibang == '' || $xephang == '' || $ngaycap == ''){
                 echo '<script>alert("Thiếu dữ liệu!");
-                    window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                    window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
             }
             else{
 
                 $kq=$this->degree->check_trung_mabang($mabang);
                 if($kq){
                     echo '<script>alert("Trùng mã bằng");
-                    window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                    window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                 }
                 else{
 
                     if (!$this->degree->checkChungChi($masv)) {
                         echo '<script>alert("Sinh viên chưa đủ điều kiện tốt nghiệp");
-                            window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                            window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                     }
                     else{
                             $kq1=$this->degree->bangtotnghiep_insert($mabang,$tensv,$masv,$makhoa,$loaibang,$xephang,$ngaycap);
@@ -107,11 +107,11 @@
                                 unset($_SESSION['xephang']);
                                 unset($_SESSION['ngaycap']);
                                 echo '<script>alert("Thêm mới thành công!");
-                            window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                            window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                             }
                             else
                                 echo '<script>alert("Thêm mới thất bại!");
-                            window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                            window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                         }
                 }
             }
@@ -157,16 +157,16 @@
                 if ($mabang == '' || $tensv == '' || $masv == '' || $makhoa == '' || $loaibang == '' || $xephang == '' || $ngaycap == '') {
                     
                     echo '<script>alert("Thiếu dữ liệu!");
-                    window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep/sua/' . $mabang . '";</script>';
+                    window.location.href = "http://totnghieputt/Bangtotnghiep/sua/' . $mabang . '";</script>';
                 } else {
                     // Gọi hàm sửa dữ liệu trong model
                     $kq = $this->degree->bangtotnghiep_update($mabang,$tensv,$masv,$makhoa,$loaibang,$xephang,$ngaycap);
                     if ($kq) {
                         echo '<script>alert("Sửa thành công!");
-                    window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                    window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                     } else {
                         echo '<script>alert("Sửa thất bại!");
-                        window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                        window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                     }
                 }
         
@@ -177,11 +177,11 @@
             $kq=$this->degree->bangtotnghiep_delete($mabang);
             if($kq){
                 echo '<script>alert("Xóa thành công!");
-                    window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                    window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
             }
             else{
                 echo '<script>alert("Xóa thất bại!");
-                    window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                    window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
             }
             //Gọi lại giao diện
             $this->view('Masterlayout',[
@@ -198,7 +198,7 @@
                 // Cập nhật trạng thái
                 if ($this->degree->capnhattrangthai($mabang, $trangthai)) {
                     echo '<script>
-                        window.location.href = "http://localhost/congnghephanmem/Bangtotnghiep";</script>';
+                        window.location.href = "http://totnghieputt/Bangtotnghiep";</script>';
                 } else {
                     echo '<script>alert("Cập nhật trạng thái thất bại!");</script>';
                 }

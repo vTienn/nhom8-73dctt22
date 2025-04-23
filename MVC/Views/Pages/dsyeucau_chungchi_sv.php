@@ -97,12 +97,12 @@
                         <td><?php echo $row['Trangthai'] ?></td>
                         <td style="display: flex; " >
                             <?php if (!$isProcessed) { ?>
-                                <form style="margin-right:5px;"method="POST" action="http://localhost/congnghephanmem/yeucau_chungchi/suacc_v/<?php echo $row['MaChungChi'] ?>">
+                                <form style="margin-right:5px;"method="POST" action="http://totnghieputt/yeucau_chungchi/suacc_v/<?php echo $row['MaChungChi'] ?>">
                                     <button type="submit" name="xacnhan" class="btn btn-outline-primary">Sửa</button>
                                 </form>
 
                              
-                                <form method="POST" action="http://localhost/congnghephanmem/yeucau_chungchi/xoa/<?php echo $row['MaChungChi'] ?>">        
+                                <form method="POST" action="http://totnghieputt/yeucau_chungchi/xoa/<?php echo $row['MaChungChi'] ?>">        
                                     <button  onclick="return confirm('Bạn có thực sự muốn xóa?')" type="submit" name="huybo" class="btn btn-outline-danger">Xóa</button>
                                 </form>
                                

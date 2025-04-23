@@ -22,23 +22,23 @@ class Danhsachtk extends controller{
             //Kiểm tra thiếu dữ liệu
             if($tentk =='' ||$mk =='' || $loaitk == ''){
                 echo '<script>alert("Thiếu dữ liệu!");
-                    window.location.href = "http://localhost/congnghephanmem/Danhsachtk";</script>';
+                    window.location.href = "http://totnghieputt/Danhsachtk";</script>';
             }
             else{
                 $kq1=$this->ds->check_trung($tentk);
              
                 if($kq1){
                     echo '<script>alert("Trùng Tên Tài Khoản");
-                    window.location.href = "http://localhost/congnghephanmem/Danhsachtk";</script>';
+                    window.location.href = "http://totnghieputt/Danhsachtk";</script>';
                 }
                 else{
                     $kq=$this->ds->tk_insert($tentk,$mk,$loaitk);
                     if($kq)
                             echo '<script>alert("Thêm mới thành công!");
-                            window.location.href = "http://localhost/congnghephanmem/Danhsachtk";</script>';
+                            window.location.href = "http://totnghieputt/Danhsachtk";</script>';
                         else
                             echo '<script>alert("Thêm mới thất bại!");
-                            window.location.href = "http://localhost/congnghephanmem/Danhsachtk";</script>';
+                            window.location.href = "http://totnghieputt/Danhsachtk";</script>';
                 }
             //gọi lại giao diện
             $this->view('Masterlayout_admin',[
@@ -71,7 +71,7 @@ class Danhsachtk extends controller{
     function sua($tentk = null) {
         if ($tentk === null) {
             echo '<script>alert("Thiếu thông tin tài khoản cần sửa!");
-            window.location.href = "http://localhost/congnghephanmem/Danhsachtk";</script>';
+            window.location.href = "http://totnghieputt/Danhsachtk";</script>';
             exit;
         }
     
@@ -90,14 +90,14 @@ class Danhsachtk extends controller{
     
             if ($tentk == '' || $mk == '' || $loaitk == '') {
                 echo '<script>alert("Thiếu dữ liệu!");
-                window.location.href = "http://localhost/congnghephanmem/Danhsachtk/sua/' . $tentk . '";</script>';
+                window.location.href = "http://totnghieputt/Danhsachtk/sua/' . $tentk . '";</script>';
                 exit;
             }
     
             $kq = $this->ds->tk_update($tentk, $mk, $loaitk);
             if ($kq) {
                 echo '<script>alert("Sửa thành công!");
-                window.location.href = "http://localhost/congnghephanmem/Danhsachtk";</script>';
+                window.location.href = "http://totnghieputt/Danhsachtk";</script>';
                 exit;
             }
     
@@ -141,12 +141,12 @@ class Danhsachtk extends controller{
             if ($xacnhan == '' || $matkhaucu == '' || $matkhaumoi == '') {
                   echo '<script>
                         alert("Thiếu Dữ Liệu");
-                        window.location.href = "http://localhost/congnghephanmem/danhsachtk";
+                        window.location.href = "http://totnghieputt/danhsachtk";
                       </script>';
                 exit;
             }
 
-            if ( $xacnhan != $matkhaumoi){ echo '<script> alert("Nhập lại mật khẩu còn sai nữa???"); window.location.href = "http://localhost/congnghephanmem/danhsachtk"; </script>';
+            if ( $xacnhan != $matkhaumoi){ echo '<script> alert("Nhập lại mật khẩu còn sai nữa???"); window.location.href = "http://totnghieputt/danhsachtk"; </script>';
                 exit;
             }
 
@@ -157,13 +157,13 @@ class Danhsachtk extends controller{
                 $doii = $this->ds->changepass($tentaikhoan, $matkhaumoi);
                 echo '<script>
                         alert("Sửa thành công!");
-                        window.location.href = "http://localhost/congnghephanmem/danhsachtk";
+                        window.location.href = "http://totnghieputt/danhsachtk";
                       </script>';
                 exit;
             } else {
                 echo '<script>
                         alert("Sửa thất bại!");
-                        window.location.href = "http://localhost/congnghephanmem/danhsachtk";
+                        window.location.href = "http://totnghieputt/danhsachtk";
                       </script>';
                 exit;
             }

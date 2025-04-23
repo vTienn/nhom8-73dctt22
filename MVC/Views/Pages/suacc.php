@@ -93,7 +93,7 @@
     <div class="form-container">
         <h2>Chỉnh sửa chứng chỉ</h2>
      
-        <form method="post" action="http://localhost/congnghephanmem/dschungchidaduyet/suacc">
+        <form method="post" action="http://totnghieputt/dschungchidaduyet/suacc">
             <?php 
        
             if (isset($data['dulieu']) && mysqli_num_rows($data['dulieu']) > 0) {

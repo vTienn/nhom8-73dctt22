@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/CDT/deptt.css">
-    <link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/CDT/mms.css">
+    <link rel="stylesheet" href="http://totnghieputt/Public/css/CDT/deptt.css">
+    <link rel="stylesheet" href="http://totnghieputt/Public/css/CDT/mms.css">
 
 </head>
 <body>
 <div class="qltao">          
             
             <div class="nd">               
-                <form method="post" action="http://localhost/congnghephanmem/Thongtin/timkiem">
+                <form method="post" action="http://totnghieputt/Thongtin/timkiem">
             <div class="dau">
                 <div class="onhap">
                 <input id="otk" type="text" placeholder="    Nhập Mã Hoặc Tên"  name="txtmt" value="<?php if(isset($data['mt'])) echo $data['mt'] ?>">
@@ -28,7 +28,7 @@
 
          </div>
  <div class="nut">
-       <a  href="http://localhost/congnghephanmem/Thongtin/vthem">Thêm</a>
+       <a  href="http://totnghieputt/Thongtin/vthem">Thêm</a>
             </div>
         </form> 
       <div class="dsht">
@@ -74,12 +74,12 @@
                             <td class="c hd">
                                 <div class="hdong">
                                      <a class="chucnang" 
-                                href="http://localhost/congnghephanmem/Thongtin/vsua/<?php echo $row['MaSinhVien'] ?>">Sửa</a>
+                                href="http://totnghieputt/Thongtin/vsua/<?php echo $row['MaSinhVien'] ?>">Sửa</a>
                                
                                  <a class="chucnang"  
                                  onclick="return confirm('Bạn có thực sự muốn xóa?')"
 
-                                href="http://localhost/congnghephanmem/Thongtin/xoa/<?php echo $row['MaSinhVien'] ?>">Xóa</a>
+                                href="http://totnghieputt/Thongtin/xoa/<?php echo $row['MaSinhVien'] ?>">Xóa</a>
                                </div>
                                
                             </td>

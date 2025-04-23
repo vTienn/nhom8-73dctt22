@@ -11,10 +11,10 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
-<link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/phu1.css">
+<link rel="stylesheet" href="http://totnghieputt/Public/css/phu1.css">
 
-<link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/phu4.css">
-<link rel="stylesheet" href="http://localhost/congnghephanmem/Public/css/phuchangepass.css">
+<link rel="stylesheet" href="http://totnghieputt/Public/css/phu4.css">
+<link rel="stylesheet" href="http://totnghieputt/Public/css/phuchangepass.css">
 
 
 
@@ -34,10 +34,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <div class="admin-layout">
 <div class=" w3-light-grey w3-content sidebar"  style="max-height:100%" >
 <button class="toggle-btn" id="toggleSidebar">
-<img src="http://localhost/congnghephanmem/Public/picture/utt.png" style="width:100%;" class="w3-round"></button>
+<img src="http://totnghieputt/Public/picture/utt.png" style="width:100%;" class="w3-round"></button>
 <ul class="sidebar-menu">
                 <li  class="w3-bar-item w3-button w3-padding">
-                  <a href="http://localhost/congnghephanmem/Danhsachtk" style="text-decoration: none;">
+                  <a href="http://totnghieputt/Danhsachtk" style="text-decoration: none;">
                   <i class="icon fa fa-user fa-fw w3-margin-right"></i>
                   <span class="menu-text">Quản Lý Tài Khoản</span>
                   </a>
@@ -45,14 +45,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </li>
                 
                 <li  class="w3-bar-item w3-button w3-padding">
-                  <a href="http://localhost/congnghephanmem/PB" style="text-decoration: none;">
+                  <a href="http://totnghieputt/PB" style="text-decoration: none;">
                   <i class="icon fa fa-user fa-fw w3-margin-right"></i>
                   <span class="menu-text">Quản Lý Phòng Ban</span>
                   </a>
                     
                 </li>
                 <li class="w3-bar-item w3-button w3-padding">
-                    <a href="http://localhost/congnghephanmem/Thongke" style="text-decoration: none;">
+                    <a href="http://totnghieputt/Thongke" style="text-decoration: none;">
                     <i class="icon fa fa-th-large fa-fw w3-margin-right"></i>
                     <span class="menu-text">Thống Kê</span>
                     </a>
@@ -64,7 +64,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </a>
                 </li>
                 <li class="w3-bar-item w3-button w3-padding">
-                    <a href="http://localhost/congnghephanmem/Login" style="text-decoration: none;">
+                    <a href="http://totnghieputt/Login" style="text-decoration: none;">
                     <i class="icon fa fa-th-large fa-fw w3-margin-right"></i>
                     <span class="menu-text">Đăng Xuất</span>
                     </a>
@@ -93,8 +93,8 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 </script>
-<script src="http://localhost/congnghephanmem/Public/js/phu1.js"></script>
-<script src="http://localhost/congnghephanmem/Public/js/phumaster.js"></script>
+<script src="http://totnghieputt/Public/js/phu1.js"></script>
+<script src="http://totnghieputt/Public/js/phumaster.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
@@ -102,7 +102,7 @@ function w3_close() {
 <button class="close-btn" onclick="closeModal()">×</button>
     <div class="change-password-container">
         <h1><b>Đổi mật khẩu</b></h1>
-    <form action="http://localhost/congnghephanmem/danhsachtk/changepass" method="POST">
+    <form action="http://totnghieputt/danhsachtk/changepass" method="POST">
     <?php 
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
